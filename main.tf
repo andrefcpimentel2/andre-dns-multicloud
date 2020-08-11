@@ -1,5 +1,5 @@
 module "dns-multicloud" {
-  source              = "git::https://github.com/lhaig/dns-multicloud.git?ref=v1.1"
+  source              = "git::https://github.com/lhaig/terraform-dns-multicloud.git?ref=v1.1"
   owner	              = var.owner
   namespace		         = var.namespace
   created-by		       = var.created-by
@@ -10,7 +10,7 @@ module "dns-multicloud" {
   create_gcp_dns_zone		= var.create_gcp_dns_zone
   create_aws_dns_zone		= var.create_aws_dns_zone
   hosted-zone	          = var.hosted-zone
-  region	              = var.region
+  aws_region	              = var.region
 }
 
 output "aws_sub_zone_id" {
