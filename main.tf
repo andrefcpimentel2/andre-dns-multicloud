@@ -1,5 +1,5 @@
 module "dns-multicloud" {
-  source              = "git::https://github.com/lhaig/dns-multicloud.git?ref=v1.1"
+  source              = "git::https://github.com/lhaig/terraform-dns-multicloud.git?ref=0.2.2"
   owner	              = var.owner
   namespace		         = var.namespace
   created-by		       = var.created-by
