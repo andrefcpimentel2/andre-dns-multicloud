@@ -10,7 +10,6 @@ module "dns-multicloud" {
   create_gcp_dns_zone		= var.create_gcp_dns_zone
   create_aws_dns_zone		= var.create_aws_dns_zone
   hosted-zone	          = var.hosted-zone
-  aws_region	              = var.region
 }
 
 output "aws_sub_zone_id" {
