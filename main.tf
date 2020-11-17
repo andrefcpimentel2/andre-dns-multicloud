@@ -13,7 +13,7 @@ module "dns-multicloud" {
 }
 
 output "aws_sub_zone_id" {
-  value = ${module.dns-multicloud.aws_sub_zone_id[0]}
+  value = join("",module.dns-multicloud.aws_sub_zone_id)
 }
 
 output "aws_sub_zone_nameservers" {
