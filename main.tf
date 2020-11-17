@@ -1,11 +1,14 @@
+provider "aws" {
+  version = "~> 2.46.0"
+  region  = var.aws_region
+}
+
 module "dns-multicloud" {
-  source              = "git::https://github.com/lhaig/terraform-dns-multicloud.git?ref=0.2.2"
+  source              = "git::https://github.com/lhaig/terraform-dns-multicloud.git?ref=v0.3.0"
   owner	              = var.owner
   namespace		         = var.namespace
   created-by		       = var.created-by
-  aws_region	         = var.aws_region
   gcp_project	          = var.gcp_project
-  gcp_region		        = var.gcp_region
   azure_location		    = var.azure_location
   create_gcp_dns_zone		= var.create_gcp_dns_zone
   create_aws_dns_zone		= var.create_aws_dns_zone
