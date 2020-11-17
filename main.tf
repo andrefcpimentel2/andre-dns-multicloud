@@ -13,29 +13,29 @@ module "dns-multicloud" {
 }
 
 output "aws_sub_zone_id" {
-  value = module.dns-multicloud.aws_sub_zone_id
+  value = module.dns-multicloud.aws_sub_zone_id[0]
 }
 
 output "aws_sub_zone_nameservers" {
-  value = module.dns-multicloud.aws_sub_zone_nameservers
+  value = module.dns-multicloud.aws_sub_zone_nameservers[0]
 }
 
 output "azure_sub_zone_name" {
-  value = module.dns-multicloud.azure_sub_zone_name
+  value = module.dns-multicloud.azure_sub_zone_name[0]
 }
 
 output "azure_sub_zone_nameservers" {
-  value = module.dns-multicloud.azure_sub_zone_nameservers
+  value = module.dns-multicloud.azure_sub_zone_nameservers[0]
 }
 
 output "azure_dns_resourcegroup" {
-  value = module.dns-multicloud.azure_dns_resourcegroup
+  value = module.dns-multicloud.azure_dns_resourcegroup[0]
 }
 
 output "gcp_dns_zone_name" {
-  value = module.dns-multicloud.gcp_dns_zone_name
+  value = module.dns-multicloud.gcp_dns_zone_name[0]
 }
 
 output "gcp_dns_zone_nameservers" {
-  value = module.dns-multicloud.gcp_dns_zone_nameservers
+  value = module.dns-multicloud.gcp_dns_zone_nameservers[0]
 }
