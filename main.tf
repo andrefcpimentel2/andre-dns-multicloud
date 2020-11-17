@@ -12,6 +12,9 @@ module "dns-multicloud" {
   hosted-zone	          = var.hosted-zone
 }
 
+ resource "null_resource" "test" {
+   }
+  
 output "aws_sub_zone_id" {
   value = join("",module.dns-multicloud.aws_sub_zone_id)
 }
