@@ -21,7 +21,7 @@ output "aws_sub_zone_nameservers" {
 }
 
 output "azure_sub_zone_name" {
-  value = module.dns-multicloud.azure_sub_zone_name
+  value = join("",module.dns-multicloud.azure_sub_zone_name)
 }
 
 output "azure_sub_zone_nameservers" {
@@ -29,11 +29,11 @@ output "azure_sub_zone_nameservers" {
 }
 
 output "azure_dns_resourcegroup" {
-  value = module.dns-multicloud.azure_dns_resourcegroup
+  value = join("",module.dns-multicloud.azure_dns_resourcegroup)
 }
 
 output "gcp_dns_zone_name" {
-  value = module.dns-multicloud.gcp_dns_zone_name
+  value = join("",module.dns-multicloud.gcp_dns_zone_name}
 }
 
 output "gcp_dns_zone_nameservers" {
