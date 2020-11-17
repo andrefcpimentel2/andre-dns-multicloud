@@ -3,9 +3,7 @@ module "dns-multicloud" {
   owner	              = var.owner
   namespace		         = var.namespace
   created-by		       = var.created-by
-  aws_region	         = var.aws_region
   gcp_project	          = var.gcp_project
-  gcp_region		        = var.gcp_region
   azure_location		    = var.azure_location
   create_gcp_dns_zone		= var.create_gcp_dns_zone
   create_aws_dns_zone		= var.create_aws_dns_zone
