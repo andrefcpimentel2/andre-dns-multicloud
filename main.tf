@@ -33,7 +33,7 @@ output "azure_dns_resourcegroup" {
 }
 
 output "gcp_dns_zone_name" {
-  value = join("",module.dns-multicloud.gcp_dns_zone_name}
+  value = join("",module.dns-multicloud.gcp_dns_zone_name)
 }
 
 output "gcp_dns_zone_nameservers" {
